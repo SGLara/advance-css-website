@@ -328,3 +328,17 @@ body {
     text-decoration: underline;
     color: #2ca0ca;
 }
+
+.social {
+    height: 190px;
+}
+
+.social a {
+    display: block;
+    color: #333333;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
