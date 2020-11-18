@@ -66,6 +66,12 @@ body {
     transition: all 300ms;
 }
 
+.logo:hover {
+    border-radius: 2px;
+    color: black;
+    background-color: #cccccc;
+}
+
 .icon {
     font-family: "WebSymbolsRegular";
 }
@@ -77,6 +83,36 @@ body {
     margin-top: 8px;
     margin-left: 26px;
     font-family: "WebSymbolsRegular";
+    animation-name: rotate-gear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-gear {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.logo:hover .gear {
+    animation: from-below 500ms linear;
+}
+
+
+@keyframes from-below {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 .logo h3 {
@@ -86,6 +122,19 @@ body {
     margin-top: 5px;
     margin-right: 65px;
     transition: all 300ms;
+}
+
+.logo:hover h3 {
+    animation: from-right 300ms linear;
+}
+
+@keyframes from-right {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
 }
 
 .menu {
