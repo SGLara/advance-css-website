@@ -271,6 +271,7 @@
 
     .card:hover .icon {
         font-size: 35px;
+        animation: none;
     }
 
     .card .category {
